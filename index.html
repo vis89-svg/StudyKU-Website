@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="frontpage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <style>
+    /* Additional CSS for the modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      overflow: auto;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-content {
+      background-color: black;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      animation-name: modalopen;
+      animation-duration: 0.5s;
+    }
+
+    @keyframes modalopen {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .color-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container navbar">
+        <div class="menu">
+          <input type="checkbox" id="checking">
+          <label for="checking">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#about" id="aboutLink">ABOUT</a></li>
+            <div class="courses">
+            <li><a href="#course">COURSE</a></li>
+            </div>
+            <li><a href="#contact" id="contactLink">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="PicsArt_10-18-05.21.07.png">
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <top-section>
+    <div class="section">
+      <div class="container">
+        <img src="ghb.png">
+      </div>
+      <div class="contain">  
+        <h3>Welcome to UCEK</h3>
+        <h1>Question Bank</h1>
+        <p>LET'S GET STARTED</p>
+        <div class="radial-gradient"></div>
+        <div class="radial-sidegradient"></div>
+        <div class="radial-topgradient"></div>      
+      </div>
+    </div>
+  </top-section>
+  
+  <bottom-section>
+    <div class="para"> 
+      <p>Unlock the power of knowledge and enhance your engineering skills with Engineering Question Bank.<br>
+      Whether you're studying for exams, honing your expertise or simply curious about the world of<br>
+      engineering, our platform has everything you need to succeed. Join our community of learners <br>
+      today and embark on your journey in engineering experience.
+      </p>
+    </div>
+  </bottom-section>    
+
+  <div class="head">
+    <h2>Select your course</h2>
+  </div>
+  
+  <section id="course">
+    <div class="middle-container">
+      <a href="IT.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="IT.png">
+          <h6>Information<br>Technology</h6>
+        </div>
+      </a>
+      <a href="EC.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="EC.png"/>
+          <h6>Electronics and<br>Communication</h6>
+        </div>
+      </a>
+      <a href="CS.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="CS.png"/>
+          <h6>Computer  <br>Science</h6>
+        </div>
+      </a>
+    </div>                           
+    <div class="radial-secondgradient"></div>        
+  </section>
+  
+  <div class="quote">
+    <div class="quoteimg">   
+      <img src="image(1).png" alt="Your Image">
+    </div>
+    <div class="quotep">
+      <p>
+        "The scientist discovers a new type<br>of material or energy and the<br>engineer discovers a new use for it."
+      </p>
+      <div class="quotes">
+        <p>-Gardon Lindsay Glegg</p>
+      </div>
+    </div>
+  </div>
+  <div class="radial-bottomgradient"></div>
+  <div class="radial-bottomredgradient"></div>
+
+  <!-- Modal Section -->
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p style="color: white; margin-top: 55px; font-family: 'Poppins', sans-serif;">
+        Created by Decode [Vishag S Vishnu A.V & Amal M.A].
+        <p style="margin-top: 10px; color: whitesmoke; font-family: 'Poppins', sans-serif;">This project has been made possible with invaluable support and guidance from Sabeena Miss and Shijida Miss throughout its development and our friends from the IT (2022-2026 batch).</p>
+        <p style="margin-top: 10px; color: whitesmoke; font-family: 'Poppins', sans-serif; font-weight: 600;">Maintained and hosted by Decode</p>
+
+
+      </p>      
+      <div style="margin-top: 30px; margin-left: 0px;">
+        <div class="color-dot" style="background-color: red;" onclick="changeBorderColor('red')"></div>
+        <div class="color-dot" style="background-color: yellow;" onclick="changeBorderColor('yellow')"></div>
+        <div class="color-dot" style="background-color: green;" onclick="changeBorderColor('green')"></div>
+        <div class="color-dot" style="background-color: blue;" onclick="changeBorderColor('blue')"></div>
+        <div class="color-dot" style="background-color: violet;" onclick="changeBorderColor('violet')"></div>
+        <div class="color-dot" style="background-color: pink;" onclick="changeBorderColor('pink')"></div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeContact()">&times;</span>
+    <p style="color: whitesmoke; margin-top: 60px;">We value feedback and prioritize clear communication always.</p>
+    <div style="display: flex; justify-content: space-between; align-items: center;" class="row">
+      
+      <div class="col">
+        <p style="color: white; margin-top: 23px; font-family: 'Poppins', sans-serif;">
+          Google forms<br> <a style="color: white;" href="https://docs.google.com/forms/d/e/1FAIpQLSeqSpFVU3vScsDMiQ76A8x2CtfeDVxUK_JtwFvcDff_C6N0xw/viewform?usp=sf_link" target="_blank">Redirect</a>.
+
+      </div>
+      <div class="col">
+        <p style="color: white; margin-top: 26px; font-family: 'Poppins', sans-serif;">
+          Watsapp<br> <a style="color: white;" href="https://wa.me/9495311044" target="_blank">Redirect</a>.
+
+      </div>
+    </div>
+    
+      
+    </p>      
+    <div style="margin-top: 30px; margin-left: 0px;">
+      <div class="color-dot" style="background-color: red;" onclick="changeBorderColor('red', this)"></div>
+      <div class="color-dot" style="background-color: yellow;" onclick="changeBorderColor('yellow', this)"></div>
+      <div class="color-dot" style="background-color: green;" onclick="changeBorderColor('green', this)"></div>
+      
+    </div>
+  </div>
+</div>
+
+  
+  
+  
+
+
+  <footer>
+    <div class="footer">
+      <div class="footer-section">
+        <div class="down">
+          <div class="down-left">
+            <img src="Logo WITH A.png">
+          </div>
+          <div class="down-right">
+            <p>Contact Us</p>
+            <img src="Social.png">
+          </div>    
+        </div>
+        <div class="letters">
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Sales and Refunds</p>
+          <p>Legal</p>
+          <p>Site Map</p>
+        </div>
+        <div class="rights">
+          @2021 All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function changeBorderColor(color, element) {
+      document.querySelector('#aboutModal .modal-content').style.border = `1px solid ${color}`;
+      document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('selected-dot'));
+      element.classList.add('selected-dot');
+    }
+    // JavaScript for modal functionality
+    document.getElementById('aboutLink').addEventListener('click', function(event) {
+      event.preventDefault();
+      openModal();
+    });
+
+    function openModal() {
+      document.getElementById('aboutModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('aboutModal').style.display = 'none';
+    }
+    
+    document.getElementById('contactLink').addEventListener('click', function(event) {
+    event.preventDefault();
+     openContact();
+    });
+
+    function openContact() {
+   document.getElementById('contactModal').style.display = 'block';
+    }
+
+    function closeContact() {
+    document.getElementById('contactModal').style.display = 'none';
+    }
+
+  </script>
+</body>
+</html>
