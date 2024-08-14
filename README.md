@@ -19,6 +19,5 @@ Visit the https://study-ku.netlify.app to access all the study materials directl
 
 ## Contributions
 
-We welcome your contributions! If you have additional resources to share or suggestions for improving the website, please reach out or submit your ideas.
-Have any study materials to share https://drive.google.com/drive/folders/19zSt8wtWoPL7ZuiVx8tzt7-j3hydkgOe?usp=drive_link upload on this folder.
+We welcome your contributions! If you have additional resources to share or suggestions for improving the website, please reach out or submit your ideas. Have any study materials to share https://drive.google.com/drive/folders/19zSt8wtWoPL7ZuiVx8tzt7-j3hydkgOe?usp=drive_link upload on this folder.
 
